@@ -1,0 +1,363 @@
+<html><head><base href="/">
+<title>Ultimate Roadman Guide</title><style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto 30px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5),
+                0 0 40px rgba(255,215,0,0.1);
+    border: 1px solid rgba(255,215,0,0.2);
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      repeating-linear-gradient(45deg, 
+        rgba(0,0,0,0.1) 0px, 
+        rgba(0,0,0,0.1) 2px,
+        transparent 2px, 
+        transparent 6px
+      );
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5),
+                0 0 40px rgba(255,215,0,0.1);
+    border: 1px solid rgba(255,215,0,0.2);
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5),
+                 0 0 20px rgba(255,215,0,0.5);
+    letter-spacing: 3px;
+    font-weight: 900;
+    background: linear-gradient(45deg, #ffd700, #ffa500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,215,0,0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+
+  .section:hover::before {
+    transform: translateX(100%);
+  }
+
+  .section h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8em;
+    text-shadow: 0 0 10px rgba(255,215,0,0.3);
+  }
+
+  .section h2::before {
+    content: "🔥";
+  }
+
+  .subsection {
+    margin: 15px 0;
+    padding: 15px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    border-left: 3px solid #ffd700;
+  }
+
+  .subsection h3 {
+    color: #ffa500;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    text-shadow: 0 0 5px rgba(255,165,0,0.3);
+  }
+
+  .tip {
+    font-style: italic;
+    color: #87CEEB;
+    margin-top: 5px;
+    padding: 10px;
+    background: rgba(135,206,235,0.1);
+    border-radius: 5px;
+    border-left: 3px solid #87CEEB;
+  }
+
+  @keyframes shine {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
+  .important {
+    background: linear-gradient(90deg, 
+      rgba(255,215,0,0) 0%,
+      rgba(255,215,0,0.2) 25%,
+      rgba(255,215,0,0.2) 75%,
+      rgba(255,215,0,0) 100%);
+    background-size: 200% auto;
+    animation: shine 3s linear infinite;
+  }
+
+  .warning {
+    background: rgba(255,107,107,0.1);
+    border: 2px solid #ff6b6b;
+    text-shadow: 0 0 10px rgba(255,107,107,0.5);
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  p:not(.warning):not(.tip)::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+  }
+</style></head><body>
+<div class="container">
+  <h1 class="title">The Ultimate Roadman Guide</h1>
+  
+  <img src="https://whtctvy_efkw4xhlfbz8.c.websim.ai/roadman.jpg" alt="Tactical Roadman Figures" class="hero-image">
+
+  <div class="section">
+    <h2>The Essential Wardrobe</h2>
+    <div class="subsection">
+      <h3>Outerwear</h3>
+      <p>North Face Puffer Jacket (Strictly black or navy, minimum £250 retail)</p>
+      <p>Nike Tech Fleece Tracksuit (Grey/Black combo preferred, must be matching set)</p>
+      <p>Stone Island Quarter Zip (For special link-ups)</p>
+      <p>Trapstar Irongate Jacket (Winter essential)</p>
+      <p class="tip">Pro tip: Layer your Tech Fleece under your puffer in winter. Always keep your tags visible.</p>
+    </div>
+    <div class="subsection">
+      <h3>Footwear</h3>
+      <p>Nike Air Force 1s (Triple white, must be spotless)</p>
+      <p>Nike TN Air Max Plus (For special occasions)</p>
+      <p>Sliders with socks (Summer essential)</p>
+      <p class="tip">Clean your creps daily with a toothbrush and washing up liquid</p>
+    </div>
+    <div class="subsection">
+      <h3>Accessories</h3>
+      <p>Man bag (Small Nike or Gucci pouch)</p>
+      <p>Snapback or Trapstar beanie</p>
+      <p>Nike crew socks (Pulled up)</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Advanced Roadman Language</h2>
+    <div class="subsection">
+      <h3>Essential Vocabulary</h3>
+      <p>"Wagwan" - Hello/What's going on</p>
+      <p>"Fam/Bruv" - Friend/Brother</p>
+      <p>"Pattern" - Sort something out</p>
+      <p>"Peak" - Bad situation</p>
+      <p>"Bare" - Lots of/Very</p>
+      <p>"Link up" - Meet up</p>
+      <p>"Peng" - Attractive/Good looking</p>
+      <p>"Mandem" - Group of male friends</p>
+      <p>"Gwop" - Money</p>
+      <p>"Bait" - Obvious/Suspicious</p>
+      <p class="tip">Combine words for maximum effect: "Bare peng tings at the link up, fam"</p>
+    </div>
+    <div class="subsection">
+      <h3>Advanced Phrases</h3>
+      <p>"Allow it" - Leave it/Stop it</p>
+      <p>"It's looking deep" - Situation is serious</p>
+      <p>"No cap" - No lie/For real</p>
+      <p>"Say less" - Say no more/I understand</p>
+      <p>"That's cold" - That's impressive</p>
+      <p>"Moving mad" - Acting crazy/suspicious</p>
+      <p>"On sight" - Immediate confrontation</p>
+      <p>"Mashed up" - Very intoxicated/destroyed</p>
+      <p>"Dead" - Boring/not interesting</p>
+      <p>"Shook" - Scared/nervous</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Daily Routine</h2>
+    <div class="subsection">
+      <h3>Morning Pattern</h3>
+      <p>Wake up late (around 11 AM)</p>
+      <p>Careful outfit selection (30+ minutes minimum)</p>
+      <p>Meticulous crep cleaning routine (white AF1s must shine)</p>
+      <p>Quick trim at the local barber (fade must be fresh)</p>
+      <p>Link with the mandem at the local chicken shop</p>
+      <p>Morning Snap streaks with "just woke up" caption at 2 PM</p>
+    </div>
+    <div class="subsection">
+      <h3>Afternoon Activities</h3>
+      <p>Circle the ends on electric bikes (Lime bikes preferred)</p>
+      <p>Hold down the spot (usually outside shops)</p>
+      <p>FIFA tournaments at someone's yard (Winner stays on rules)</p>
+      <p>Perfect your mixtape at the local studio</p>
+      <p>Coordinate group rides through different ends</p>
+      <p>Scout new spots for Instagram photos</p>
+    </div>
+    <div class="subsection">
+      <h3>Evening Operations</h3>
+      <p>Link up at the local shisha spot</p>
+      <p>Call out opps on social media</p>
+      <p>Group chat coordination for next day's activities</p>
+      <p>Late night chicken and chips run</p>
+      <p>Gaming session with the mandem (Warzone or FIFA)</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Essential Skills</h2>
+    <div class="subsection">
+      <h3>Social Navigation</h3>
+      <p>Master the art of looking busy while doing nothing</p>
+      <p>Perfect your "I'm not impressed" face</p>
+      <p>Learn to spot ops (opposition) from a mile away</p>
+      <p>Develop a sixth sense for police presence</p>
+    </div>
+    <div class="subsection">
+      <h3>Local Knowledge</h3>
+      <p>Know every chicken shop rating by heart</p>
+      <p>Memorize all bus routes and camera blind spots</p>
+      <p>Map out the best spots for link ups</p>
+      <p>Keep track of rival ends boundaries</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Entertainment Essentials</h2>
+    <div class="subsection">
+      <h3>Music Knowledge</h3>
+      <p>UK Drill basics: Central Cee, Digga D, Unknown T</p>
+      <p>Classic Grime: Skepta, Wiley, Stormzy</p>
+      <p>NYC Drill influences: Pop Smoke, Fivio Foreign</p>
+      <p class="tip">Always stay updated with the latest releases and beef</p>
+    </div>
+    <div class="subsection">
+      <h3>Social Media Game</h3>
+      <p>Snapchat stories with appropriate filters</p>
+      <p>Instagram lives from the ends</p>
+      <p>TikTok dance challenges (but maintain masculinity)</p>
+      <p>Never post your location in real-time</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Food & Nutrition</h2>
+    <div class="subsection">
+      <h3>Essential Meals</h3>
+      <p>Chicken & Chips (4 wings minimum, extra hot sauce)</p>
+      <p>Kebab rolls (Post-function necessity)</p>
+      <p>Lucozade & Walkers Sensations combo</p>
+      <p>Morley's special burger meal</p>
+      <p class="tip">Always know which shops do student discount and which ones give extra chips</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Advanced Street Wisdom</h2>
+    <p>Trust your gut - if something feels peak, it probably is</p>
+    <p>Keep your circle small but loyal (quality over quantity)</p>
+    <p>Respect the oldheads (veterans) in your area</p>
+    <p>Never cross postcodes without proper planning</p>
+    <p>Build connections with local shop owners (always pay respect)</p>
+    <p>Keep your personal life separate from road life</p>
+    <p>Master the art of the quick exit when needed</p>
+    <p>Know your territory's shortcuts and escape routes</p>
+    <p>Maintain relationships with local youngsters (they're good lookouts)</p>
+    <p>Always have a backup phone for emergencies</p>
+    <p class="tip">Remember: Real roadmen move in silence and pattern their movements carefully</p>
+  </div>
+
+  <div class="section">
+    <h2>Technology & Communication</h2>
+    <div class="subsection">
+      <h3>Essential Apps</h3>
+      <p>Snapchat (Main communication tool)</p>
+      <p>Instagram (For flexing only)</p>
+      <p>Find My Friends (Keep track of the mandem)</p>
+      <p>Bus Times App (Essential for transport)</p>
+      <p>Uber Eats (Late night munch)</p>
+      <p class="tip">Never share your live location publicly</p>
+    </div>
+  </div>
+
+  <p class="warning important">⚠️ This guide is purely for entertainment purposes. Stay safe, legal, and respectful! Remember, being a roadman is about community and culture, not criminal activity. True respect comes from positive contributions to your community. ⚠️</p>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.section');
+  
+  sections.forEach(section => {
+    section.addEventListener('mouseover', () => {
+      section.style.backgroundColor = 'rgba(255,255,255,0.15)';
+      section.style.transform = 'translateY(-5px) scale(1.01)';
+    });
+    
+    section.addEventListener('mouseout', () => {
+      section.style.backgroundColor = 'rgba(255,255,255,0.1)';
+      section.style.transform = 'translateY(0) scale(1)';
+    });
+
+    section.addEventListener('click', () => {
+      section.style.transform = 'scale(0.98)';
+      setTimeout(() => {
+        section.style.transform = 'translateY(-5px)';
+      }, 100);
+    });
+  });
+});
+</script>
+</body></html>
